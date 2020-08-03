@@ -5,22 +5,27 @@ if __name__ == '__main__':
     window.bgcolor('white')
     
     # This code makes a new Turtle. Pick a new name for the turtle
-    myTurtle = turtle.Turtle()
+    bob = turtle.Turtle()
     
     # Make your turtle's shape 'turtle', .shape('turtle')
-    
+    bob.shape('turtle')
     # Set your turtle's speed using .speed(2)
-    
+    bob.speed(-100)
     # Set your turtle's color using .color('green') and .pencolor('blue')
-    
+    bob.color('teal')
+   
     # Move your turtle forward using .forward(100)
+    bob.forward(100)
     # TEST    Did your turtle move forward?
     
     # Move your turtle left or right using .left(90) or .right(90)
-    
+    bob.left(90)
     # Now put the forward and left/right code into a for loop to repeat 4 times.
+    for i in range(100):
+        bob.forward(100)
+        bob.left(90)
     # TEST    Did your turtle draw a square?
-        
+       
     # Move your turtle to a new place on the screen using .goto(x, y)
     # x=0 and y=0 is the center of the screen
     
