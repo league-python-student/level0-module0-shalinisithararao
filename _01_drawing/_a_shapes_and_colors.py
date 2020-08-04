@@ -10,7 +10,7 @@ if __name__ == '__main__':
     # Make your turtle's shape 'turtle', .shape('turtle')
     bob.shape('turtle')
     # Set your turtle's speed using .speed(2)
-    bob.speed(-100)
+    bob.speed(2)
     # Set your turtle's color using .color('green') and .pencolor('blue')
     bob.color('teal')
    
@@ -21,7 +21,7 @@ if __name__ == '__main__':
     # Move your turtle left or right using .left(90) or .right(90)
     bob.left(90)
     # Now put the forward and left/right code into a for loop to repeat 4 times.
-    for i in range(100):
+    for i in range(4):
         bob.forward(100)
         bob.left(90)
     # TEST    Did your turtle draw a square?
