@@ -4,32 +4,32 @@ from tkinter import messagebox, simpledialog, Tk
 if __name__ == '__main__':
     
     # Make a new window variable, window = Tk()
-    
+    window = Tk()
     # Hide the window using the window's .withdraw() method
-
+    window.withdraw()
     #// Put this sentence in a pop-up message box:
     
     # Get the player to enter an adjective
-     
+    adjective=simpledialog.askstring(None,"enter an ajective")
     # Get the player to enter a type of liquid
-    
+    liquid=simpledialog.askstring(None, "enter a liquid")
     # Get the player to enter a body part
-     
+    bodypart=simpledialog.askstring(None, "enter a body part")
     # Get the player to enter a verb
-     
+    verb=simpledialog.askstring(None, "enter a verb")
     # Get the player to enter a place
-    
+    place=simpledialog.askstring(None, "enter a place")
     # The story below has has been written as a group of Strings joined together by + signs.
     # The story contains place holders, indicated by [** **] which you need to replace with
     # the values entered by the player.
     # Hint:  You will need to add more + signs to join the variables to the other parts of the story.
         
     story = (
-    "Piranhas are more [**adjective**] during the day, so cross the river at\n"
-    "night. Piranhas are attracted to fresh [**type of liquid**] and will most\n"
-    "likely take a bite out of your [**body part**] if you [**verb**]. Whatever\n"
+    "Piranhas are more " + adjective + " during the day, so cross the river at\n"
+    "night. Piranhas are attracted to fresh + liquid + and will most\n"
+    "likely take a bite out of your + body part + if you + verb +. Whatever\n"
     "you do, if you have an open wound, try to find another way to get "
-    "back to the [**place**]. Good luck!"
+    "back to the + place +. Good luck!"
     )
 
     
