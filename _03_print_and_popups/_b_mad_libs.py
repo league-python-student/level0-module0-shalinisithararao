@@ -10,7 +10,7 @@ if __name__ == '__main__':
     #// Put this sentence in a pop-up message box:
     
     # Get the player to enter an adjective
-    adjective=simpledialog.askstring(None,"enter an ajective")
+    adjective=simpledialog.askstring(None,"enter an adjective")
     # Get the player to enter a type of liquid
     liquid=simpledialog.askstring(None, "enter a liquid")
     # Get the player to enter a body part
